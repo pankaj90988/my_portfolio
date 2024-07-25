@@ -216,6 +216,7 @@ html {
     .nav-content {
         /* border: 2px solid greenyellow; */
         padding: 1rem;
+        display: none;
     }
 
     .nav-contentu,
@@ -224,7 +225,6 @@ html {
     }
 
     #menu-icon {
-        /* display: contents; */
         font-size: 2.2rem;
         padding: 1rem;
         margin-top: 1rem;
@@ -349,6 +349,7 @@ html {
     color: white;
     padding: 0.5rem 0.5rem;
     border-radius: 8px;
+    margin-right: auto;
 
 }
 
@@ -392,7 +393,8 @@ html {
     .btn-box {
         padding-bottom: 1rem;
         margin-bottom: 2rem;
-    
+        width: 100%;
+        border: 2px solid red;
     }
 
 }
@@ -520,7 +522,7 @@ img {
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    padding: 0 10px;
+    padding: 0 8px;
     border-radius: 8px;
     z-index: -1;
     animation: 2.5s spin linear infinite;

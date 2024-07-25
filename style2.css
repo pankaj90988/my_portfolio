@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010610;
+    object-fit: cover;
+    color: white;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-logo h2 {
+    padding: 0.8rem;
+    margin: 0.5rem;
+    font-style: italic;
+}
+
+.left-logo h2 span {
+    color: orangered;
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    /* border: 1px solid rgb(43, 255, 0); */
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: black;
+    margin: auto;
+    width: 100%;
+    /* border:2px solid red; */
+}
+
+.nav-content {
+    margin: 0.5rem;
+    padding: 1rem;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.nav-content a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav-content a:hover {
+    /* border-bottom: 2px solid orangered; */
+    color: orangered;
+}
+
+.nav-content::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.8rem;
+    width: 0;
+    height: 5px;
+    background: orangered;
+    transition: 0.3s width linear;
+}
+.nav-content:hover::after{
+    width: 90%;
+}
+
+
+
+.nav-content i {
+    font-size: 1.3rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-photo-basicinfo-socialhandle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: 6rem;
+    /* border: 2px solid green; */
+}
+
+.nit-photo,
+.nit-photo img {
+    border-radius: 50%;
+}
+
+.nit-photo img:hover {
+    box-shadow: 0 0 5px yellow,
+        0 0 25px yellow,
+        0 0 50px yellow,
+        0 0 75px yellow,
+        0 0 100px yellow;
+}
+
+@media (max-width:600px) {
+    .cont-photo-basicinfo-socialhandle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 4rem;
+        margin-top: 3rem;
+        /* border: 2px solid green; */
+    }
+
+    .social-handle {
+        border-top: 2px solid white;
+    }
+    .header-container{
+        padding: 0;
+    }
+}
+.social-handle{
+    width: 100%;
+    text-wrap: wrap;
+    /* border: 2px solid red; */
+}
+#social-handle {
+    color: chartreuse;
+}
+
+.basic-info ul,
+a {
+    list-style: none;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.social-handle ul, a
+ {
+    list-style: none;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.education ,
+ul {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.personal-heading {
+    font-size: 1.5rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.personal-project {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px solid green; */
+}
+
+.project-content {
+    padding: 1rem 2rem;
+    /* border: 2px solid red; */
+    gap: 1rem;
+}
+
+button {
+    margin-left: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 600;
+    margin-top: 10px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: orangered;
+    border: 2px solid white;
+    box-shadow: 0 0 10px orangered,
+        0 0 30px orangered,
+        0 0 60px orangered,
+        0 0 100px orangered;
+}
+
+.project-img {
+    padding: 2rem;
+
+    /* width: 360px;
+    height: 250px; */
+    /* border: 2px solid red; */
+}
+
+.project-img img {
+    border-radius: 8px;
+}
+
+.project-img img:hover {
+    box-shadow: 0 0 5px orangered,
+        0 0 25px orangered,
+        0 0 40px orangered,
+        0 0 75px orangered;
+    border: 2px solid green;
+
+}
+
+.personal-project,
+ul {
+    font-size: 1.2rem;
+}
+
+.site-name {
+    color: #1E90FF;
+    font-size: 1.5rem;
+}
+
+@media (max-width:600px) {
+    .personal-project {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        /* border: 2px solid green; */
+    }
+
+    .awesome-icon {
+        display: contents;
+    }
+
+
+    .project-content {
+        /* border-top: 1px solid white; */
+    }
+
+    .project-img {
+        border-bottom: 1px solid white;
+        padding: 0;
+    }
+    .education, ul {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .right-contact {
+        display: none;
+    }
+}
+
+.technical-skill-interest {
+    height: 123px;
+    /* border: 2px solid yellow; */
+}
