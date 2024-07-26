@@ -220,8 +220,11 @@ ul {
 }
 
 .site-name {
-    color: #1E90FF;
+    color: orangered;
     font-size: 1.5rem;
+}
+.site-name a{
+    text-decoration: none;
 }
 
 @media (max-width:600px) {
