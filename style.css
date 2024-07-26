@@ -114,10 +114,8 @@ html {
 }
 
 .header-container {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 1.5fr 2fr 5fr;
-    justify-items: flex-start;
+    display: flex;
+    justify-content: space-between;
     gap: 0.8rem;
     background-color: black;
     margin: auto;
@@ -172,6 +170,7 @@ html {
     display: flex;
     flex-direction: row;
     position: relative;
+    margin-left: 3rem;
     /* border: 2px solid yellow; */
 }
 
@@ -306,6 +305,12 @@ html {
         padding: 1rem;
         margin-top: 5rem;
         
+    }
+    .developer-text p{
+        font-size: 1.6rem;
+    }
+    .developer-text h1{
+        font-size: 3rem;
     }
 
 }
@@ -443,6 +448,9 @@ html {
 
     .my-edu {
         width: 100%;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
     }
 
     #hero-photo img {
@@ -559,7 +567,6 @@ img {
 
 @media (min-width:600px) {
     * {
-        overflow-x: hidden;
         margin: 0;
         padding: 0;
     }
@@ -1069,7 +1076,7 @@ img {
     padding: 1rem 1.3rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(18, 17, 17);
     display: none;
     transition: height 1s linear;
     /* transform: translateX(140px); */
