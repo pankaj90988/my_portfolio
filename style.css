@@ -24,8 +24,7 @@ body {
 
 }
 
-.developer-text
-p {
+.developer-text p {
     animation: fade linear both;
     animation-timeline: view();
     /* animation-range: entry 50% cover 50%; */
@@ -42,7 +41,8 @@ p {
 
 }
 
-.contact ,.tech-skill h2 {
+.contact,
+.tech-skill h2 {
     background: linear-gradient(90deg, rgb(14, 13, 13), transparent 70%);
     background-size: 200%;
     animation: reveal both linear;
@@ -159,9 +159,11 @@ html {
     background: orangered;
     transition: 0.3s width linear;
 }
-.nav-content:hover::after{
+
+.nav-content:hover::after {
     width: 90%;
 }
+
 .nav-content i {
     font-size: 1.3rem;
 }
@@ -265,9 +267,10 @@ html {
     padding: 2rem;
     margin-top: 1rem;
     /* border: 2px solid rgb(242, 0, 255); */
-    
+
 }
-.createImgCont{
+
+.createImgCont {
     /* border: 2px solid red; */
     padding: 0.5rem 0.8rem;
     cursor: pointer;
@@ -275,8 +278,10 @@ html {
 
 
 }
-/* Created Element */
-.imageDiv{
+
+
+/* CREATED IMAGE CONTAINER */
+.imageDiv {
     position: absolute;
     width: 200px;
     height: 270px;
@@ -284,47 +289,59 @@ html {
     overflow: hidden;
     z-index: 0;
 }
-.imageDiv img{
-    transform: translateY(10%);
+
+/* .imageDiv:nth-child(odd) {
+    transform: rotate(-20deg);
+}  */
+
+/* .imageDiv:nth-child(even) {
+    transform: rotate(20deg);
+} */
+
+
+.imageDiv img {
+    transform: translateY(100%);
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    
+
 }
-.animate{
-    animation: moveup 0.6s both;
-    /* transition: 0.3s transform; */
+
+.animate {
+    animation: moveup 1s both;
 }
+
 @keyframes moveup {
-    from{
+    from {
         transform: translateY(100%);
     }
-    to{
+
+    to {
         transform: translateY(0);
     }
 }
 
 
 
-
-
-
-.background-video{
+/* BACKGROUND VIDEO */
+.background-video {
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
 }
-@media (min-aspect-ratio:16/9){
-    .background-video{
+
+@media (min-aspect-ratio:16/9) {
+    .background-video {
         width: 100%;
         height: auto;
-        
+
     }
 }
-@media (max-aspect-ratio:16/9){
-    .background-video{
+
+@media (max-aspect-ratio:16/9) {
+    .background-video {
         width: auto;
         height: 100%;
         overflow: hidden;
@@ -347,12 +364,14 @@ html {
         width: 100%;
         padding: 1rem;
         margin-top: 5rem;
-        
+
     }
-    .developer-text p{
+
+    .developer-text p {
         font-size: 1.6rem;
     }
-    .developer-text h1{
+
+    .developer-text h1 {
         font-size: 3rem;
     }
 
@@ -366,11 +385,13 @@ html {
     transition: 0.5s;
     /* border: 2px solid green; */
 }
-.developer-text h1:hover{
+
+.developer-text h1:hover {
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
-.developer-text h1 span{
+
+.developer-text h1 span {
     color: orangered;
 }
 
@@ -600,7 +621,7 @@ img {
     overflow: hidden;
     box-shadow: 0 0 5px orangered,
         0 0 25px orangered,
-        0 0 50px orangered, 
+        0 0 50px orangered,
         0 0 100px orangered;
 }
 
@@ -762,10 +783,10 @@ img {
 .card {
     position: relative;
     width: 100%;
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     padding: 0.9rem 1rem;
     border-radius: 12px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(14, 13, 13);
 }
 
 @property --angle {
@@ -938,7 +959,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     row-gap: 2rem;
-   
+
 }
 
 @media (max-width:600px) {
@@ -970,6 +991,7 @@ img {
     #right-input {
         padding: 0.5rem;
     }
+
     #right-input #message {
         width: 100%;
     }
@@ -979,7 +1001,8 @@ img {
     /* border: 2px solid yellow; */
     padding: 2rem 2.5rem;
 }
-.technical-skill-interest .left{
+
+.technical-skill-interest .left {
     margin-top: 0.8rem;
 }
 
@@ -1142,6 +1165,227 @@ img {
     font-weight: 600;
     margin-top: 0.5rem;
 }
-.menu-container ul li:hover{
-    background-color:  rgb(143, 99, 83);
+
+.menu-container ul li:hover {
+    background-color: rgb(143, 99, 83);
 }
+
+/* ONSCROLL ANIMATION CSS */
+
+/* HEADER CONTAINER ANIMATION */
+.header-container {
+    overflow: hidden;
+}
+
+.animate-header-cont-item {
+    animation: moveup 0.5s ease-out forwards;
+    transition: 0.3s all;
+}
+
+.left-logo {
+    animation-delay: 0.1s;
+    transform: translateY(100%);
+    transition: 2s moveup;
+}
+
+.middle-search {
+    animation-delay: 0.3s;
+    transform: translateY(100%);
+}
+
+.nav-content:nth-child(1) {
+    animation-delay: 0.4s;
+    transform: translateY(100%);
+}
+
+.nav-content:nth-child(2) {
+    animation-delay: 0.5s;
+    transform: translateY(100%);
+}
+
+.nav-content:nth-child(3) {
+    animation-delay: 0.6s;
+    transform: translateY(100%);
+}
+
+.nav-content:nth-child(4) {
+    animation-delay: 0.7s;
+    transform: translateY(100%);
+}
+
+.nav-content:nth-child(5) {
+    animation-delay: 0.8s;
+    transform: translateY(100%);
+}
+
+.nav-contentu:nth-child(1) {
+    animation-delay: 0.9s;
+    transform: translateY(100%);
+}
+
+@keyframes moveup {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* DEVELOPER TEXT PHOTO ANIMATION */
+
+.createImgCont {
+    opacity: 0;
+    transform: translateY(80%);
+}
+
+.designer-container {
+    opacity: 0;
+    animation-delay: 0.5s;
+    transform: translateY(100%);
+}
+
+.btn-box {
+    opacity: 0;
+    animation-delay: 0.9s;
+    transform: translateY(100%);
+}
+
+.my-photo {
+    opacity: 0;
+    animation-delay: 1.1s;
+    transform: translateY(40%);
+}
+
+.animate-fade-in {
+    animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MY EDU CONTAINER ANIMATION */
+
+.my-edu{
+    transform: translateY(40%);
+    opacity: 0;
+}
+.hero-photo{
+    transform: translateY(40%);
+    opacity: 0;
+    animation-delay: 1s;
+}
+.animateMyEduUp{
+    animation: fadeInUp 2s both;
+}
+
+@keyframes fadeInUp {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MANY PHOTO CONTAINER */
+
+.first-many-photo-cont{
+    transform: translateX(-130%);
+    transition: 0.3s slideLeftToRight ;
+}
+#img-1{
+    transform: translateX(-40%);
+    animation-delay: 0.4s;
+    
+}
+#img-2{
+    transform: translateX(-40%);
+    animation-delay: 0.6s;
+    
+}
+#img-3{
+    transform: translateX(-40%);
+    animation-delay: 0.8s;
+}
+#img-4{
+    transform: translateX(-40%);
+    animation-delay: 1s;
+}
+.manyPhotoAnimationFirst{
+    animation: slideLeftToRight 2s ease-in-out forwards;
+}
+@keyframes slideLeftToRight {
+    from{
+        transform: translateX(-40%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.second-many-photo-cont{
+    transform: translateX(-130%);
+    transition: 0.3s slideLeftToRight ;
+}
+#img-5{
+    transform: translateX(40%);
+    animation-delay: 0.4s;
+    
+}
+#img-6{
+    transform: translateX(40%);
+    animation-delay: 0.6s;
+    
+}
+#img-7{
+    transform: translateX(40%);
+    animation-delay: 0.8s;
+}
+#img-8{
+    transform: translateX(40%);
+    animation-delay: 1s;
+}
+.manyPhotoAnimationSecond{
+    animation: slideRightToLeft 2s ease-in-out forwards;
+}
+@keyframes slideRightToLeft {
+    from{
+        transform: translateX(40%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+/* ABOUT ME CONTAINER */
+
+.photo{
+    transform: translateX(-130%);
+}
+.animate-about-me-photo{
+    animation: slideLeftToRightMePhoto 1s ease-in forwards;
+}
+@keyframes slideLeftToRightMePhoto {
+    to{
+        transform: translateX(0);
+    }
+}
+
+.text-content{
+    transform: translateX(130%);
+}
+.animate-about-me-text{
+    animation: slideRightToLeftMeText 2s ease-in-out forwards;
+}
+@keyframes slideRightToLeftMeText {
+    to{
+        transform: translateX(0);
+    }
+}
+
+/* MY SERVICES CONTAINER */

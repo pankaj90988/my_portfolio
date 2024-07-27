@@ -98,4 +98,126 @@ developertext.addEventListener('mousemove', throttleFunction((dets) => {
   },1600)
 
 
-}, 300))
+}, 400))
+
+
+window.addEventListener('scroll', animateMyEduUp = ()=>{
+  let myEdu = document.querySelector('.my-edu')
+  let windowHeight = window.innerHeight;
+  let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
+  let startShowing = 80;
+
+  // console.log("helllo you scrolling")
+
+  if(contHowMuchFromTop < windowHeight - startShowing){
+    myEdu.classList.add("animateMyEduUp")
+  }else{
+    myEdu.classList.remove("animateMyEduUp")
+  }
+})
+
+window.addEventListener('scroll', animateMyHero = ()=>{
+  let heroPhoto = document.querySelector('.hero-photo')
+  let windowHeight = window.innerHeight;
+  let contHowMuchFromTop = heroPhoto.getBoundingClientRect().top;
+  let startShowing = 80;
+
+  // console.log("helllo you scrolling")
+
+  if(contHowMuchFromTop < windowHeight - startShowing){
+    heroPhoto.classList.add("animateMyEduUp")
+  }else{
+    heroPhoto.classList.remove("animateMyEduUp")
+  }
+})
+
+
+// MANY PHOTO CONTAINER
+// first container
+window.addEventListener('scroll', animateMyHero = ()=>{
+  let imgOne = document.querySelector('#img-1')
+  let imgTwo = document.querySelector('#img-2')
+  let imgThree = document.querySelector('#img-3')
+  let imgFour = document.querySelector('#img-4')
+  let firstManyCont = document.querySelector('.first-many-photo-cont')
+  let windowHeight = window.innerHeight;
+  let contHowMuchFromTop = firstManyCont.getBoundingClientRect().top;
+  let startShowing = 80;
+
+  console.log("helllo you scrolling")
+
+  if(contHowMuchFromTop < windowHeight - startShowing){
+    firstManyCont.classList.add("manyPhotoAnimationFirst")
+    imgOne.classList.add("manyPhotoAnimationFirst")
+    imgTwo.classList.add("manyPhotoAnimationFirst")
+    imgThree.classList.add("manyPhotoAnimationFirst")
+    imgFour.classList.add("manyPhotoAnimationFirst")
+  }else{
+    firstManyCont.classList.remove("manyPhotoAnimationFirst")
+    imgOne.classList.remove("manyPhotoAnimationFirst")
+    imgTwo.classList.remove("manyPhotoAnimationFirst")
+    imgThree.classList.remove("manyPhotoAnimationFirst")
+    imgFour.classList.remove("manyPhotoAnimationFirst")
+  }
+})
+
+// second container
+window.addEventListener('scroll', animateMyHero = ()=>{
+  let imgOne = document.querySelector('#img-5')
+  let imgTwo = document.querySelector('#img-6')
+  let imgThree = document.querySelector('#img-7')
+  let imgFour = document.querySelector('#img-8')
+  let firstManyCont = document.querySelector('.second-many-photo-cont')
+  let windowHeight = window.innerHeight;
+  let contHowMuchFromTop = firstManyCont.getBoundingClientRect().top;
+  let startShowing = 80;
+
+  console.log("helllo you scrolling")
+
+  if(contHowMuchFromTop < windowHeight - startShowing){
+    firstManyCont.classList.add("manyPhotoAnimationSecond")
+    imgOne.classList.add("manyPhotoAnimationSecond")
+    imgTwo.classList.add("manyPhotoAnimationSecond")
+    imgThree.classList.add("manyPhotoAnimationSecond")
+    imgFour.classList.add("manyPhotoAnimationSecond")
+  }else{
+    firstManyCont.classList.remove("manyPhotoAnimationSecond")
+    imgOne.classList.remove("manyPhotoAnimationSecond")
+    imgTwo.classList.remove("manyPhotoAnimationSecond")
+    imgThree.classList.remove("manyPhotoAnimationSecond")
+    imgFour.classList.remove("manyPhotoAnimationSecond")
+  }
+})
+
+
+// ABOUT ME CONTAINER
+
+window.addEventListener('scroll', animateMyEduUp = ()=>{
+  let myEdu = document.querySelector('.photo')
+  let windowHeight = window.innerHeight;
+  let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
+  let startShowing = 90;
+
+  // console.log("helllo you scrolling")
+
+  if(contHowMuchFromTop < windowHeight - startShowing){
+    myEdu.classList.add("animate-about-me-photo")
+  }else{
+    myEdu.classList.remove("animate-about-me-photo")
+  }
+})
+
+window.addEventListener('scroll', animateMyEduUp = ()=>{
+  let myEdu = document.querySelector('.text-content')
+  let windowHeight = window.innerHeight;
+  let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
+  let startShowing = 90;
+
+  // console.log("helllo you scrolling")
+
+  if(contHowMuchFromTop < windowHeight - startShowing){
+    myEdu.classList.add("animate-about-me-text")
+  }else{
+    myEdu.classList.remove("animate-about-me-text")
+  }
+})
