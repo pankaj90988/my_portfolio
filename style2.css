@@ -73,7 +73,8 @@ body {
     background: orangered;
     transition: 0.3s width linear;
 }
-.nav-content:hover::after{
+
+.nav-content:hover::after {
     width: 90%;
 }
 
@@ -123,15 +124,18 @@ body {
     .social-handle {
         border-top: 2px solid white;
     }
-    .header-container{
+
+    .header-container {
         padding: 0;
     }
 }
-.social-handle{
+
+.social-handle {
     width: 100%;
     text-wrap: wrap;
     /* border: 2px solid red; */
 }
+
 #social-handle {
     color: chartreuse;
 }
@@ -143,14 +147,14 @@ a {
     color: white;
 }
 
-.social-handle ul, a
- {
+.social-handle ul,
+a {
     list-style: none;
     font-size: 1.4rem;
     color: white;
 }
 
-.education ,
+.education,
 ul {
     padding-left: 2rem;
     font-size: 1.2rem;
@@ -167,6 +171,22 @@ ul {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     /* border: 2px solid green; */
+}
+
+/* PNG IMAGE */
+.rpa-image {
+    position: absolute;
+    top: 23.3%;
+    left: 16.3%;
+    transform: translate(-50% -50%);
+}
+
+
+.unesco-image {
+    position: absolute;
+    top: 12.3%;
+    left: 18.9%;
+    transform: translate(-50% -50%);
 }
 
 .project-content {
@@ -197,22 +217,17 @@ button:hover {
 
 .project-img {
     padding: 2rem;
-
-    /* width: 360px;
-    height: 250px; */
+    position: relative;
     /* border: 2px solid red; */
 }
 
-.project-img img {
-    border-radius: 8px;
-}
-
-.project-img img:hover {
+.project-img:hover {
     box-shadow: 0 0 5px orangered,
-        0 0 25px orangered,
+        0 0 20px orangered,
         0 0 40px orangered,
-        0 0 75px orangered;
-    border: 2px solid green;
+        0 0 70px orangered;
+     border: 2px solid orangered; 
+     border-radius: 8px;
 
 }
 
@@ -224,8 +239,11 @@ ul {
 .site-name {
     color: orangered;
     font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
 }
-.site-name a{
+
+.site-name a {
     text-decoration: none;
 }
 
@@ -244,14 +262,28 @@ ul {
 
 
     .project-content {
+
         /* border-top: 1px solid white; */
     }
 
     .project-img {
         border-bottom: 1px solid white;
         padding: 0;
+        position: relative;
     }
-    .education, ul {
+
+    .rpa-image {
+        top: 18.2%;
+        left: 10%;
+    }
+
+    .unesco-image {
+        top: 4.3%;
+        left: 13.4%;
+    }
+
+    .education,
+    ul {
         padding-left: 1.5rem;
     }
 }
