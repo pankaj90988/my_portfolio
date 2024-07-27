@@ -100,7 +100,8 @@ html {
     flex-direction: row;
     margin: auto;
     /* border: 3px solid rgb(29, 247, 9); */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.269);
+    backdrop-filter: blur(50px);
     position: fixed;
     width: 100%;
     top: 0px;
@@ -117,7 +118,8 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 0.8rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.269);
+    backdrop-filter: blur(50px);
     margin: auto;
     width: 100%;
 
@@ -1300,24 +1302,24 @@ img {
 }
 #img-1{
     transform: translateX(-40%);
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
     
 }
 #img-2{
     transform: translateX(-40%);
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
     
 }
 #img-3{
     transform: translateX(-40%);
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
 }
 #img-4{
     transform: translateX(-40%);
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 .manyPhotoAnimationFirst{
-    animation: slideLeftToRight 2s ease-in-out forwards;
+    animation: slideLeftToRight 1.5s ease-in-out forwards;
 }
 @keyframes slideLeftToRight {
     from{
@@ -1334,24 +1336,24 @@ img {
 }
 #img-5{
     transform: translateX(40%);
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
     
 }
 #img-6{
     transform: translateX(40%);
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
     
 }
 #img-7{
     transform: translateX(40%);
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
 }
 #img-8{
     transform: translateX(40%);
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 .manyPhotoAnimationSecond{
-    animation: slideRightToLeft 2s ease-in-out forwards;
+    animation: slideRightToLeft 1.5s ease-in-out forwards;
 }
 @keyframes slideRightToLeft {
     from{

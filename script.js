@@ -107,7 +107,6 @@ window.addEventListener('scroll', animateMyEduUp = ()=>{
   let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
   let startShowing = 80;
 
-  // console.log("helllo you scrolling")
 
   if(contHowMuchFromTop < windowHeight - startShowing){
     myEdu.classList.add("animateMyEduUp")
@@ -122,7 +121,6 @@ window.addEventListener('scroll', animateMyHero = ()=>{
   let contHowMuchFromTop = heroPhoto.getBoundingClientRect().top;
   let startShowing = 80;
 
-  // console.log("helllo you scrolling")
 
   if(contHowMuchFromTop < windowHeight - startShowing){
     heroPhoto.classList.add("animateMyEduUp")
@@ -144,7 +142,6 @@ window.addEventListener('scroll', animateMyHero = ()=>{
   let contHowMuchFromTop = firstManyCont.getBoundingClientRect().top;
   let startShowing = 80;
 
-  console.log("helllo you scrolling")
 
   if(contHowMuchFromTop < windowHeight - startShowing){
     firstManyCont.classList.add("manyPhotoAnimationFirst")
@@ -172,7 +169,6 @@ window.addEventListener('scroll', animateMyHero = ()=>{
   let contHowMuchFromTop = firstManyCont.getBoundingClientRect().top;
   let startShowing = 80;
 
-  console.log("helllo you scrolling")
 
   if(contHowMuchFromTop < windowHeight - startShowing){
     firstManyCont.classList.add("manyPhotoAnimationSecond")
@@ -198,7 +194,6 @@ window.addEventListener('scroll', animateMyEduUp = ()=>{
   let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
   let startShowing = 90;
 
-  // console.log("helllo you scrolling")
 
   if(contHowMuchFromTop < windowHeight - startShowing){
     myEdu.classList.add("animate-about-me-photo")
@@ -213,7 +208,6 @@ window.addEventListener('scroll', animateMyEduUp = ()=>{
   let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
   let startShowing = 90;
 
-  // console.log("helllo you scrolling")
 
   if(contHowMuchFromTop < windowHeight - startShowing){
     myEdu.classList.add("animate-about-me-text")
