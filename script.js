@@ -35,7 +35,7 @@ let isThisText = true;
 function typeWriter() {
 
   if (isThisText == true) {
-    txt = "Frontend Web Developer";
+    txt = "Frontend Developer";
   } else if (isThisText == false) {
     txt = "Web Designer";
 
