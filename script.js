@@ -164,6 +164,7 @@ window.addEventListener('scroll', animateMyHero = ()=>{
   let imgTwo = document.querySelector('#img-6')
   let imgThree = document.querySelector('#img-7')
   let imgFour = document.querySelector('#img-8')
+  // let secondAll = document.querySelectorAll('.second-many-photo-cont img')
   let firstManyCont = document.querySelector('.second-many-photo-cont')
   let windowHeight = window.innerHeight;
   let contHowMuchFromTop = firstManyCont.getBoundingClientRect().top;
@@ -176,12 +177,18 @@ window.addEventListener('scroll', animateMyHero = ()=>{
     imgTwo.classList.add("manyPhotoAnimationSecond")
     imgThree.classList.add("manyPhotoAnimationSecond")
     imgFour.classList.add("manyPhotoAnimationSecond")
+    // secondAll.forEach(function(ele, id){
+    //   ele.classList.add("manyPhotoAnimationSecond")
+    // })
   }else{
     firstManyCont.classList.remove("manyPhotoAnimationSecond")
     imgOne.classList.remove("manyPhotoAnimationSecond")
     imgTwo.classList.remove("manyPhotoAnimationSecond")
     imgThree.classList.remove("manyPhotoAnimationSecond")
     imgFour.classList.remove("manyPhotoAnimationSecond")
+    // secondAll.forEach(function(ele, id){
+    //   ele.classList.remove("manyPhotoAnimationSecond")
+    // })
   }
 })
 
