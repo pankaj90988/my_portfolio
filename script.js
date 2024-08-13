@@ -66,65 +66,65 @@ const throttleFunction = (func, delay) => {
 }
 
 let arr = [
-    "images/rpa.png",
-    "images/unesco.png",
-    "images/amazon.png",
-    "images/rock_paper.png",
-    "images/cutie.jpg",
-    "images/dice_rolling.png",
-    "images/calculator.png",
-    "images/tic-tak-toe.png",
+  "images/rpa.png",
+  "images/unesco.png",
+  "images/amazon.png",
+  "images/rock_paper.png",
+  "images/cutie.jpg",
+  "images/dice_rolling.png",
+  "images/calculator.png",
+  "images/tic-tak-toe.png",
 
 ]
 
 developertext.addEventListener('mousemove', throttleFunction((dets) => {
-   
-  let random = Math.floor(Math.random()*8)
+
+  let random = Math.floor(Math.random() * 8)
   console.log(random)
 
   let div = document.createElement("div");
   div.classList.add("imageDiv")
   div.style.left = dets.x + "px";
-  div.style.top =  "100px";
+  div.style.top = "100px";
 
-   createImgCont.insertAdjacentElement('beforebegin', div);
-  
+  createImgCont.insertAdjacentElement('beforebegin', div);
+
   let img = document.createElement("img")
   img.setAttribute("src", arr[random])
   div.appendChild(img);
   img.classList.add("animate")
-  setTimeout(function(){
+  setTimeout(function () {
     div.remove();
-  },1600)
+  }, 1600)
 
 
 }, 400))
 
 
-window.addEventListener('scroll', animateMyEduUp = ()=>{
+window.addEventListener('scroll', animateMyEduUp = () => {
   let myEdu = document.querySelector('.my-edu')
   let windowHeight = window.innerHeight;
   let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
   let startShowing = 80;
 
 
-  if(contHowMuchFromTop < windowHeight - startShowing){
+  if (contHowMuchFromTop < windowHeight - startShowing) {
     myEdu.classList.add("animateMyEduUp")
-  }else{
+  } else {
     myEdu.classList.remove("animateMyEduUp")
   }
 })
 
-window.addEventListener('scroll', animateMyHero = ()=>{
+window.addEventListener('scroll', animateMyHero = () => {
   let heroPhoto = document.querySelector('.hero-photo')
   let windowHeight = window.innerHeight;
   let contHowMuchFromTop = heroPhoto.getBoundingClientRect().top;
   let startShowing = 80;
 
 
-  if(contHowMuchFromTop < windowHeight - startShowing){
+  if (contHowMuchFromTop < windowHeight - startShowing) {
     heroPhoto.classList.add("animateMyEduUp")
-  }else{
+  } else {
     heroPhoto.classList.remove("animateMyEduUp")
   }
 })
@@ -132,7 +132,7 @@ window.addEventListener('scroll', animateMyHero = ()=>{
 
 // MANY PHOTO CONTAINER
 // first container
-window.addEventListener('scroll', animateMyHero = ()=>{
+window.addEventListener('scroll', animateMyHero = () => {
   let imgOne = document.querySelector('#img-1')
   let imgTwo = document.querySelector('#img-2')
   let imgThree = document.querySelector('#img-3')
@@ -143,13 +143,13 @@ window.addEventListener('scroll', animateMyHero = ()=>{
   let startShowing = 80;
 
 
-  if(contHowMuchFromTop < windowHeight - startShowing){
+  if (contHowMuchFromTop < windowHeight - startShowing) {
     firstManyCont.classList.add("manyPhotoAnimationFirst")
     imgOne.classList.add("manyPhotoAnimationFirst")
     imgTwo.classList.add("manyPhotoAnimationFirst")
     imgThree.classList.add("manyPhotoAnimationFirst")
     imgFour.classList.add("manyPhotoAnimationFirst")
-  }else{
+  } else {
     firstManyCont.classList.remove("manyPhotoAnimationFirst")
     imgOne.classList.remove("manyPhotoAnimationFirst")
     imgTwo.classList.remove("manyPhotoAnimationFirst")
@@ -159,7 +159,7 @@ window.addEventListener('scroll', animateMyHero = ()=>{
 })
 
 // second container
-window.addEventListener('scroll', animateMyHero = ()=>{
+window.addEventListener('scroll', animateMyHero = () => {
   let imgOne = document.querySelector('#img-5')
   let imgTwo = document.querySelector('#img-6')
   let imgThree = document.querySelector('#img-7')
@@ -171,7 +171,7 @@ window.addEventListener('scroll', animateMyHero = ()=>{
   let startShowing = 80;
 
 
-  if(contHowMuchFromTop < windowHeight - startShowing){
+  if (contHowMuchFromTop < windowHeight - startShowing) {
     firstManyCont.classList.add("manyPhotoAnimationSecond")
     imgOne.classList.add("manyPhotoAnimationSecond")
     imgTwo.classList.add("manyPhotoAnimationSecond")
@@ -180,7 +180,7 @@ window.addEventListener('scroll', animateMyHero = ()=>{
     // secondAll.forEach(function(ele, id){
     //   ele.classList.add("manyPhotoAnimationSecond")
     // })
-  }else{
+  } else {
     firstManyCont.classList.remove("manyPhotoAnimationSecond")
     imgOne.classList.remove("manyPhotoAnimationSecond")
     imgTwo.classList.remove("manyPhotoAnimationSecond")
@@ -195,30 +195,52 @@ window.addEventListener('scroll', animateMyHero = ()=>{
 
 // ABOUT ME CONTAINER
 
-window.addEventListener('scroll', animateMyEduUp = ()=>{
+window.addEventListener('scroll', animateMyEduUp = () => {
   let myEdu = document.querySelector('.photo')
   let windowHeight = window.innerHeight;
   let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
   let startShowing = 90;
 
 
-  if(contHowMuchFromTop < windowHeight - startShowing){
+  if (contHowMuchFromTop < windowHeight - startShowing) {
     myEdu.classList.add("animate-about-me-photo")
-  }else{
+  } else {
     myEdu.classList.remove("animate-about-me-photo")
   }
 })
 
-window.addEventListener('scroll', animateMyEduUp = ()=>{
+window.addEventListener('scroll', animateMyEduUp = () => {
   let myEdu = document.querySelector('.text-content')
   let windowHeight = window.innerHeight;
   let contHowMuchFromTop = myEdu.getBoundingClientRect().top;
   let startShowing = 90;
 
 
-  if(contHowMuchFromTop < windowHeight - startShowing){
+  if (contHowMuchFromTop < windowHeight - startShowing) {
     myEdu.classList.add("animate-about-me-text")
-  }else{
+  } else {
     myEdu.classList.remove("animate-about-me-text")
   }
 })
+
+
+// let searchIcon = document.querySelector("#awasome-search-icon")
+// let middleSearch = document.querySelector(".middle-search")
+
+// let Icon = true;
+// searchIcon.addEventListener('click', function () {
+//   if (Icon) {
+//     middleSearch.classList.add('middle-search-toggle')
+//     menucontainer.classList.remove("open-menuContainer")
+//     menucontainer.style.display = "none"
+
+//     let isopen = menucontainer.classList.contains("open-menuContainer");
+//     menu.classList = isopen ? 'fa-solid fa-xmark'
+//       : 'fa-solid fa-bars'
+
+//     Icon = !Icon;
+//   } else {
+//     middleSearch.classList.remove('middle-search-toggle')
+//     Icon = !Icon;
+//   }
+// })

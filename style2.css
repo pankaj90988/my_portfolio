@@ -26,8 +26,8 @@ body {
     display: flex;
     width: 100vw;
     /* border: 1px solid rgb(43, 255, 0); */
-    background-color: rgba(0, 0, 0, 0.270);
-    backdrop-filter: blur(50px);
+    background-color: black;
+    border-bottom: 0.5px solid rgb(114, 110, 110);
     position: fixed;
     top: 0px;
     z-index: 999;
@@ -37,8 +37,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
-    background-color: rgba(0, 0, 0, 0.270);
-    backdrop-filter: blur(100px);
+    background-color: black;
     margin: auto;
     width: 100%;
     /* border:2px solid red; */
@@ -69,7 +68,7 @@ body {
     left: 0.5rem;
     bottom: 0.8rem;
     width: 0;
-    height: 5px;
+    height: 3px;
     background: orangered;
     transition: 0.3s width linear;
 }
