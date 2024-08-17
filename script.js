@@ -223,6 +223,24 @@ window.addEventListener('scroll', animateMyEduUp = () => {
   }
 })
 
+let experience = document.querySelector("#btn-2")
+let popup = document.querySelector(".pop-up")
+let close = document.querySelector(".pop-up h5")
+let expe = true;
+
+function openPopUp() {
+  if (expe) {
+        popup.style.display = "block"
+        expe = !expe;
+      } else {
+        popup.style.display = "none"
+        expe = !expe;
+      }
+ }
+
+experience.addEventListener('click', openPopUp);
+close.addEventListener('click', openPopUp);
+
 
 // let searchIcon = document.querySelector("#awasome-search-icon")
 // let middleSearch = document.querySelector(".middle-search")
@@ -244,3 +262,9 @@ window.addEventListener('scroll', animateMyEduUp = () => {
 //     Icon = !Icon;
 //   }
 // })
+
+let form = document.querySelector("#form")
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+})

@@ -912,21 +912,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:772px) {
     .service-content {
         display: grid;
@@ -985,6 +970,7 @@ img {
     background-color: black;
     border: 2px solid orangered;
     color: white;
+    outline: none;
     font-size: 1.2rem;
 }
 
@@ -1004,6 +990,7 @@ img {
     background-color: black;
     border: 2px solid orangered;
     color: white;
+    outline: none;
     font-size: 1.2rem;
 }
 
@@ -1013,6 +1000,7 @@ img {
     font-size: 1rem;
     background-color: orangered;
     color: white;
+    cursor: pointer;
     border-radius: 20px;
     border: none;
 }
@@ -1270,9 +1258,9 @@ img {
 
 .per-para {
     position: absolute;
-    top: 40%;
-    left: 35%;
-    transform: translate(-50% -50%);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     color: white;
     /* z-index: 5645; */
 }
@@ -1412,7 +1400,7 @@ img {
     /* border: 1px solid orangered; */
 }
 #a-linkden:hover::after{
-    content: "Linkden Profile";
+    content: "Linkeden Profile";
     position: absolute;
     color: white;
     top: 50%;
@@ -1429,21 +1417,16 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 8px;
     min-height: 2.5rem;
 }
 
 .footer-box p {
     color: white;
     font-size: 1rem;
+    padding: 0 0.5rem;
 
 }
-
-
-
-
-
-
-
 .menu-container {
     position: absolute;
     height: 0;
@@ -1714,4 +1697,45 @@ img {
     to {
         transform: translateX(0);
     }
+}
+
+/* Pop-up */
+.developer-text {
+    position: relative;
+}
+
+.pop-up {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    translate:-50% -50%;
+    width: 300px;
+    height: 300px;
+    padding: 0 0.4rem;
+    border-radius: 8px;
+    background: rgb(27, 29, 28);
+}
+.pop-up p{
+    font-size: 1.5rem;
+}
+
+.cross-com {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross-com h5 {
+    width: fit-content;
+    font-size: 1.5rem;
+    background: red;
+    color: #fff;
+    padding: 0 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cross-com p {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.4rem;
 }
