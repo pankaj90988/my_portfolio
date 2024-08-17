@@ -1055,7 +1055,7 @@ img {
 
 .tech-skill {
     /* border: 2px solid yellow; */
-    padding: 2rem 2.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .technical-skill-interest{
@@ -1073,7 +1073,7 @@ img {
     gap: 1rem;
     flex-wrap: wrap;
     /* border: 2px solid green; */
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
 .technical-skill-interest .right{
