@@ -463,10 +463,15 @@ html {
     justify-content: center;
     align-items: center;
 }
-
+.my-photo .first-img-main-cont{
+    width: 350px;
+    height: 350px;
+    /* border: 2px solid red; */
+}
 @media (max-width:772px) {
     .my-photo {
         border-radius: 0;
+        padding: 0;
 
     }
 
@@ -478,13 +483,16 @@ html {
 
 }
 
-.my-photo img {
+.my-photo .first-img-main-cont img {
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: 0.3s ease;
 
 }
 
-.my-photo img:hover {
+.my-photo .first-img-main-cont img:hover {
     box-shadow: 0 0 5px orangered,
         0 0 15px orangered,
         0 0 30px orangered,
@@ -761,6 +769,11 @@ img {
         line-height: 1rem;
         letter-spacing: 1px;
         padding: 10px 0;
+    }
+    .text-content p {
+        font-size: 1.2rem;
+        padding: 0rem;
+        line-height: 2rem;
     }
 }
 
@@ -1575,7 +1588,7 @@ img {
 }
 
 .animateMyEduUp {
-    animation: fadeInUp 1.5s both;
+    animation: fadeInUp 1.1s both;
 }
 
 @keyframes fadeInUp {
